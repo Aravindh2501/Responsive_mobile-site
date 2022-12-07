@@ -1,0 +1,256 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#navbar{
+    position: sticky;
+    top: 0;
+    margin-bottom: 0;
+    z-index: 100;
+    box-shadow: 2px 2px 2px;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+.navbar .nav-link:hover{
+    border-bottom: 2px solid aqua;
+}
+ 
+#navbarSupportedContent a{
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+}
+section{
+width: 100%;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#main{
+    background-size: cover;
+    background:rgba(0, 0, 0, 0.993);
+    text-align: center;
+}
+
+#background-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    object-fit: fill;
+    -webkit-filter: blur(7px);
+    -moz-filter: blur(7px);
+    -o-filter: blur(7px);
+    -ms-filter: blur(7px);
+    filter: blur(7px);
+}
+
+h1{
+    
+    z-index: 10;
+    display: inline-block;
+    color: whitesmoke;
+    font-size: 55px;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 2px 2px 2px burlywood;
+}
+
+#home-text .home-text{
+    background: #1a1c2b;
+}
+
+#home-text p{
+    color: #FFF;
+    display: inline-block;
+    font-size: 1.3em;
+    font-weight: 300;
+    max-width: 800px;
+    padding-top: 5px;
+}
+ 
+#home-text .get-started {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    position: relative;
+    text-align: right;
+}
+#ourvalue{
+    color: #FFF;
+    text-align: center;
+}
+#card{
+    background:#21262D;
+    height:150vh;
+}
+#card h2{
+    color: beige;
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#row{
+    /* background-color: yellow; */
+    width: 80%;
+    margin: 60px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+
+/* #card1{
+    background-color: skyblue;
+   
+} */
+
+.card{
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    background: #1a1c2b;
+    color: #FFF;
+    border-radius: none;
+    border-color: none;
+    border: none;
+}
+.card p{
+    font-size:16px;
+}
+.card .icon{
+    padding-left:15px;
+}
+#products{
+    padding-top: 10px;
+}
+#products h2{
+    color: white;
+}
+#products .class-img{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+#footer{
+    background: #1a1c2b;
+    color: white;
+}
+#footer .contact{
+    list-style-type: none;
+}
+#footer .social-icons{
+    list-style-type: none;
+}
+
+#social-icons ul{
+    padding-right: 30px;
+    word-spacing: 10px;
+}
+
+
+#social-icons ul li{
+    display: inline-block;
+}
+
+
+ #social-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+#footerRow{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* ------------media Query--------- */
+
+@media only screen and (max-width:767px){
+    #social-icons{
+        align-items: left;
+        justify-content: left;
+        text-align: left;
+    }
+
+    #social-icons ul{
+        word-spacing: 1px;
+    }
+    
+    }
+
+
+@media only screen and (max-width:1199px){
+#card{
+    height:355vh;
+}
+
+}
+
+
+@media only screen and (max-width:341px){
+    #card{
+        height:480vh;
+    }
+
+#row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 50px;
+/* background-color: yellow; */
+}
+
+.card{
+    height: 70vh;
+}
+
+}
+
+@media only screen and (max-width: 900px) and (min-width: 768px){
+
+
+
+    #row{
+        display: flex;
+        align-items: center;  
+        justify-content: center;
+        text-align: center;
+    /* background-color: yellow; */
+    }
+
+    .card{
+        width: 80%;
+    }
+
+}
+
+
+
+@media only screen and (max-width:1199px) and (min-width:901px){
+
+
+        #row{
+            display: flex;
+            flex-wrap:wrap;
+        }
+
+
+
+.card{
+    width: 80%;
+    margin-left:10%;
+}
+
+    }
+
+
